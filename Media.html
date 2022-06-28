@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>M E D I A</title>
+	<link rel="stylesheet" href="../css/Media-stylesheet.css">
+	
+</head>
+
+<body>
+	<div class="container">
+ 
+  <div class="content-wrapper">
+  
+    <div class="child1">
+    	<img src="../Visuals/MediaPageFade.png" height="860px">
+		
+		
+    </div>
+
+    <div class="child" style="padding-bottom: 100px;">
+        	
+		<div class="slideshow-container">
+
+	<div class="mySlides fade">
+  		 <video width="896" height="504" controls>
+	<source src="../Images/REQUEST 30th Anniversary Edition Trailer.mp4" type="video/mp4">
+	</video>
+  <div class="text">REQUEST 30th Anniversary Edition Trailer 猫の恋</div>
+</div>
+
+<div class="mySlides fade">
+  <video width="896" height="504" controls>
+	<source src="../Images/Plastic Love Short ver..mp4" type="video/mp4">
+	</video>
+  <div class="text">竹内まりや「Plastic Love」Short ver</div>
+</div>
+			
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="margin-left: 400px;">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+</div>
+		
+
+		
+</div>
+	  
+	  <div class="child3">
+		<img src="../Images/MT live.jpg" height="630px" style="padding-top: 28px; margin-left: 620px;">
+    </div>
+	  
+	  <div class="child">
+	  <table style="padding-top: 30px; margin-left: 290px;">
+		  <tr>
+		  	<th><img src="../Images/Mariya Takeuchi Photoshoot3.jpg" height="280px" width="280px"></th>
+		  </tr>
+		  
+		  <tr>
+		  	<th><img src="../Images/Mariya Takeuchi Photoshoot5.jpg" height="280px" width="280px"></th>
+		  </tr>
+		  
+		  </table>
+	  
+	  </div>
+	  
+	  <div class="child2">
+	  	<img src="../Images/Mariya Takeuchi Photoshoot4.jpg" height="630px" style="padding-top: 28px;">
+	  
+	  </div>
+	  
+	  <div class="child2">
+	  	<img src="../Images/MT in Hollywood-3.jpg" height="630px" style="padding-top: 28px;">
+	  
+	  </div>
+	  
+	  <div class="child2">
+	  	<img src="../Images/Mariya Takeuchi Award-2.jpeg" height="630px" style="padding-top: 28px; margin-left: 40px;">
+	  
+	  </div>
+	  
+	
+	  
+</div>
+	
+	
+	
+	</div>
+	
+	<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+		
+</script>
+	
+	<div id="mySidebar" class="sidebar">
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+	
+  <a href="Home.html">Home</a>
+
+  <a href="About.html">About</a>
+
+  <a href="Music.html">Music</a>
+
+  <a href="Tour.html">Tour</a>
+
+	<a href="Media.html">Media</a>
+	
+	<a href="https://shop.fannect.jp/mariya/pc/" target="_blank">Store</a>
+
+</div>
+
+
+
+<div id="main">
+
+  <button class="openbtn" onclick="openNav()"><img src="../Visuals/MenuIcon.png" height="35px" width="55px"></button> 
+
+</div>
+
+
+
+<script>
+
+function openNav() {
+
+  document.getElementById("mySidebar").style.width = "250px";
+
+  document.getElementById("main").style.marginLeft = "-250px";
+	
+
+}
+
+
+
+function closeNav() {
+
+  document.getElementById("mySidebar").style.width = "0";
+
+  document.getElementById("main").style.marginLeft= "0";
+
+}
+
+</script>
+
+	
+</body>
+</html>

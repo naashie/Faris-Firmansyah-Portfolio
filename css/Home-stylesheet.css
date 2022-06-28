@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-image: url("../Visuals/HomePageTextJPG.jpg");
+	background-size: cover;
+	font-family: 'Lexend', sans-serif;
+
+}
+
+
+
+.sidebar {
+
+  height: 100%;
+
+  width: 0;
+
+  position: fixed;
+
+  z-index: 1;
+
+  top: 0;
+
+  right: 0;
+
+  background-color: #5F2257;
+
+  overflow-x: hidden;
+
+  transition: 0.5s;
+
+  padding-top: 60px;
+
+}
+
+
+
+.sidebar a {
+
+  padding: 8px 8px 8px 32px;
+
+  text-decoration: none;
+
+  font-size: 25px;
+
+  color: #F4C8F4;
+
+  display: block;
+
+  transition: 0.3s;
+
+}
+
+
+
+.sidebar a:hover {
+
+  color: #f1f1f1;
+
+}
+
+
+
+.sidebar .closebtn {
+
+  position: absolute;
+
+  top: 0px;
+
+  right: 25px;
+
+  font-size: 36px;
+
+  margin-right: 0px;
+
+}
+
+
+
+.openbtn {
+
+  font-size: 20px;
+
+  cursor: pointer;
+
+  background-color: transparent;
+
+  color: white;
+
+  padding: auto;
+
+  border-style: none;
+	
+	border: hidden;
+
+	transition: transform .2s;
+	
+	outline: none;
+	
+	position: relative;
+	
+	left: 1422px;
+	
+}
+
+
+
+.openbtn:hover {
+
+  background-color: transparent;
+	transform: scale(1.2);
+
+}
+
+
+
+#main {
+
+  transition: margin-left .5s;
+
+  padding: 16px;
+
+}
+
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+
+  .sidebar {padding-top: 15px;}
+
+  .sidebar a {font-size: 18px;}
+
+}
